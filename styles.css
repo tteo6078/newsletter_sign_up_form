@@ -71,6 +71,8 @@ body {
     padding-bottom: 1.5rem;
     font-weight: 700;
     font-size: 14px;
+    position: relative;
+    margin-top: 1rem;
 }
 
 .email-form input{
@@ -91,6 +93,14 @@ body {
 
 .sign-up-form button:hover {
     background-color: var(--red);
+}
+
+#email-error {
+    position: absolute;
+    color: var(--red);
+    font-size: 0.8rem;
+    display: none;
+    right: 0;
 }
 
 .main-card .image{
