@@ -2,6 +2,7 @@
 
     --ff: 'Roboto';
     /* Color Scheme */
+    --light-red: hsl(5, 61%, 93%);
     --red: hsl(4, 100%, 67%);
     --blue-800: hsl(234, 29%, 20%);
     --blue-700: hsl(235, 18%, 26%);
