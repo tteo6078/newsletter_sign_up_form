@@ -191,5 +191,21 @@ body {
         border-radius: 0;
         object-fit: contain;
     }
-    
+
+    .success {
+        max-width: 23rem;
+        height: 100%;
+    }
+
+    .success .success-txt {
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .success button{
+        width: 100%;
+    }
+        
 }
