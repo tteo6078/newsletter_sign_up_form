@@ -13,6 +13,15 @@
 <body>
 
   <article class="main-card">
+    <div class="image">
+      <picture>
+        <!-- mobile-first small image -->
+        <source media="(max-width: 900px)" 
+        srcset="./assets/images/illustration-sign-up-mobile.svg">
+        <!-- fallback / desktop -->
+        <img src="./assets/images/illustration-sign-up-desktop.svg">
+      </picture>
+    </div>
     <section class="sign-up-form">
       <!-- Sign-up form start -->
       <h2>
@@ -38,9 +47,6 @@
 
       <!-- Sign-up form end -->
     </section>
-    <div class="image">
-      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
-    </div>
 
   </article>
 

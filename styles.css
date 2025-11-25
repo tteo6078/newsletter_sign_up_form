@@ -11,6 +11,17 @@
 
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
     background-color: var(--blue-800);
     display: flex;
@@ -21,15 +32,14 @@ body {
 
 .main-card {
     background-color: var(--white);
-    width: 50rem;
-    height: 35rem;
+    max-height: 35rem;
     border-radius: 2rem;
     display: flex;
 }
 
 .sign-up-form {
     width: 25rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-left: 2rem;
     font-family: var(--ff);
     font-size: 16px;
@@ -43,12 +53,15 @@ body {
 
 .sign-up-form p {
     font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 .sign-up-form ul {
     list-style: none;
     padding: 0;
+    margin-top: 1rem;
 }
+
 .sign-up-form li {
     background: url(./assets/images/icon-list.svg) left center no-repeat;
     padding: 3px;
@@ -85,6 +98,7 @@ body {
 
 .sign-up-form button {
     padding: 1rem;
+    margin-bottom: 23em;
     border-radius: 10px;
     border: none;
     background-color: var(--blue-700);
@@ -100,12 +114,44 @@ body {
     position: absolute;
     color: var(--red);
     font-size: 0.8rem;
-    display: none;
     right: 0;
 }
 
-.main-card .image{
-    width: 23rem;
+.image{
+    order: 2;
     margin: 1rem;
-    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .main-card {
+        flex-direction: column;
+        width: 23rem;
+        max-height: none;
+        border-radius: 0;
+    }
+
+    .sign-up-form {
+        order: 2;
+        width: 23rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .sign-up-form form{
+        width: 21rem;
+    }
+
+    .sign-up-form button {
+        margin-bottom: 2rem;
+    }
+
+    .image {
+        margin:0;
+        width: 100%;
+        border-radius: 0;
+    }
+    
 }
