@@ -98,12 +98,13 @@ body {
 
 .sign-up-form button {
     padding: 1rem;
-    margin-bottom: 23em;
+    margin-bottom: 2rem;
     border-radius: 10px;
     border: none;
     background-color: var(--blue-700);
     color: var(--white);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .sign-up-form button:hover {
@@ -122,6 +123,42 @@ body {
     margin: 1rem;
     border-radius: 1rem;
     overflow: hidden;
+}
+
+.success {
+    background-color: var(--white);
+    max-width: 29rem;
+    padding: 3rem;
+    font-family: var(--ff);
+    border-radius: 1rem;
+}
+
+.success h2 {
+    font-size: 42px;
+    padding-top: 2rem;
+}
+
+.success p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.success button {
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--blue-700);
+    color: var(--white);
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+}
+
+.success button:hover {
+    background-color: var(--red);
 }
 
 @media (max-width: 900px) {

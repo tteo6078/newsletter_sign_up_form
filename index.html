@@ -12,18 +12,15 @@
 </head>
 <body>
 
-  <article class="main-card">
+  <article class="main-card" hidden aria-live="polite">
     <div class="image">
       <picture>
-        <!-- mobile-first small image -->
         <source media="(max-width: 900px)" 
         srcset="./assets/images/illustration-sign-up-mobile.svg">
-        <!-- fallback / desktop -->
         <img src="./assets/images/illustration-sign-up-desktop.svg">
       </picture>
     </div>
     <section class="sign-up-form">
-      <!-- Sign-up form start -->
       <h2>
         Stay updated!
       </h2>
@@ -44,20 +41,19 @@
         </div>
         <button type="submit">Subscribe to monthly newsletter</button>
       </form>
-
-      <!-- Sign-up form end -->
     </section>
 
   </article>
 
   <!-- Success message start -->
 
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
+  <articeq id="success-message" class="success"  hidden aria-live="polite" role="status">
+    <img src="./assets/images/icon-success.svg" alt="icon-success">
+    <h2>Thanks for subscribing!</h2>
+    <p>A confirmation email has been sent to <strong id="output-email">example@loremcompany.com</strong>. 
+    Please open it and click the button inside to confirm your subscription.</p>
+    <button id="dismiss" type="button">Dismiss message</button>
+  </article>
 
   <!-- Success message end -->
 
