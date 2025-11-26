@@ -198,14 +198,14 @@ body {
     }
 
     .success .success-text {
-        margin-top: 3rem;
-        align-items: center;
-        justify-content: center;
+        margin-top: 6rem;
     }
 
-
-    .success button{
-        width: 100%;
+    .success button {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 2rem;
+        max-width: 17rem;
     }
         
 }

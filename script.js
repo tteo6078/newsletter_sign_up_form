@@ -39,3 +39,4 @@ dismissBtn.addEventListener("click", () => {
   // return focus to the email input
   emailInput.focus();
 });
+
